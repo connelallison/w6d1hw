@@ -217,4 +217,5 @@ const verdict2 = declareMurderer();
 console.log(verdict2);
 
 // Verdict 1: "The murderer is Professor Plum." Verdict 2: "The murderer is Miss Scarlet."
-// I have no idea how this works.
+// My best guess as to how this works is that both scenario1 and scenario2 are both pointing to the same object - so without reassigning either of them, changing a property of one will change it for both.
+// Reassigning scenario2, however, just means that the name scenario2 now points to a string instead of the object it was sharing with scenario1 - so scenario1 is unaffected.
